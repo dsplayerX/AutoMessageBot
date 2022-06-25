@@ -1,4 +1,4 @@
-import pyautogui as pg
+import pyautogui
 import time
 
 print('Starting!')
@@ -14,10 +14,10 @@ while countdown > 0:
 
 text_file = open('animals.txt', 'r')
 
-String = 'You are a'
+preString = 'You are a'
 
 for word in text_file:
-    pg.write(String + ' ' + word)
-    pg.press('Enter')
+    pyautogui.write(preString + ' ' + word)
+    pyautogui.press('Enter')
 
 print('Completed!')
